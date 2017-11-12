@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const MainNav = () => {
-  
+
   return (
     <section className="menuwrapper">
       <nav id="mainmenu">
@@ -21,7 +21,7 @@ const MainNav = () => {
           <span></span>
           <span></span>
         </div>
-        menu</a>
+      </a>
     </section>
   );
 };
