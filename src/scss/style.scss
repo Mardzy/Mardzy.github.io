@@ -1,4 +1,11 @@
-main {
-  max-width: 988px;
-  margin: auto;
+@import "variables";
+@import "navbar";
+@import "home";
+@import "slick";
+@import "macbook";
+
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }

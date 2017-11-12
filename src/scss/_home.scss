@@ -1,0 +1,37 @@
+#home{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(177, 177, 177);
+  border: 30px solid white;
+
+  .home-logo{
+    background-color: $logo;
+    height: 37vh;
+  }
+  .home-about{
+    @extend .home-logo;
+    background-color: $about;
+  }
+  .home-intro{
+    @extend .home-logo;
+    background-color: $intro;
+  }
+  .home-projects{
+    @extend .home-logo;
+    background-color: $projects;
+  }
+  .home-contact{
+    @extend .home-logo;
+    background-color: steelBlue;
+  }
+  .home-statement{
+    @extend .home-intro;
+  }
+  .home-design{
+    @extend .home-logo;
+    background-color: darkGray;
+  }
+  .home-social{
+    @extend .home-logo;
+  }
+}

@@ -1,44 +1,58 @@
 import React from 'react';
-import productData from './data';
-import { Grid, Row } from 'react-bootstrap';
-import Product from './Product';
-import SearchBar from './SearchBar';
-import _ from 'lodash';
+import Slider from 'react-slick';
 
-class ProductGrid extends React.Component {
+function SampleNextArrow(props) {
+  const {className, style, onClick} = props;
+  return (
+    <div
+      className={className}
+      style={{...style, display: 'block', background: 'red'}}
+      onClick={onClick}
+    ></div>
+  );
+}
 
-  state = {
-    products: productData,
-    sortBy: 'price',
-    sortDirection: 'desc',
-    query: ''
-  };
+function SamplePrevArrow(props) {
+  const {className, style, onClick} = props;
+  return (
+    <div
+      className={className}
+      style={{...style, display: 'block', background: 'green'}}
+      onClick={onClick}
+    ></div>
+  );
+}
 
-  handleSort = (e) => {
-    const [sortBy, sortDirection] = e.target.value.split('|');
-    this.setState({ sortBy, sortDirection });
-  }
+class ProjectSlider extends React.Component {
 
-  handleSearch = (e) => {
-    this.setState({ query: e.target.value });
-  }
 
-  render() {
-    console.log('LOGGING Q IN RENDER METHOD ======> ', this.state.query);
-    const { sortBy, sortDirection, query } = this.state;
-    const regex = new RegExp(query, 'i');
-
-    const orderedProducts = _.orderBy(this.state.products, [sortBy], [sortDirection]);
-    const products = _.filter(orderedProducts, (product) => regex.test(product.name) || regex.test(product.brand));
+  render(){
+    const settings = {
+      arrows: true,
+      dots: true,
+      className: 'project-slider',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      autoplay: false
+    };
     return (
-      <Grid>
-        <SearchBar handleSort={this.handleSort} handleSearch={this.handleSearch} />
-        <Row>
-          {products.map((product, i) => <Product key={i} {...product} />)}
-        </Row>
-      </Grid>
+      <Slider {...settings} >
+        <div>
+          <img src="https://placeimg.com/640/480/any"/>
+        </div>
+        <div>
+          <img src="https://placeimg.com/640/480/arch"/>
+        </div>
+        <div>
+          <img src="https://placeimg.com/640/480/nature"/>
+        </div>
+        <div>
+          <img src="https://placeimg.com/640/480/animals"/>
+        </div>
+      </Slider>
     );
   }
 }
 
-export default ProductGrid;
+export default ProjectSlider;

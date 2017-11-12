@@ -1,24 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
+
+import Routes from './components/utility/Routes';
+import MainNav from './components/common/MainNav';
+
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'fontawesome';
+import 'jquery';
 import './scss/style.scss';
 
-// import MainNav from './components/common/MainNav';
-import Project from './components/projects/Project';
-
 class App extends React.Component {
-  render() {
+  componentDidMount(){
+    const navIcon = document.getElementById('nav-icon3');
+    const toggleIcon = () =>{
+      navIcon.addEventListener('click', ()=>{
+        navIcon.classList.toggle('open');
+      });
+    };
+    toggleIcon();
+  }
+  render(){
     return (
-      <div>
-        <Project />
-      </div>
+      <Router>
+        <main>
+          <MainNav />
+          <Routes />
+        </main>
+      </Router>
     );
   }
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
