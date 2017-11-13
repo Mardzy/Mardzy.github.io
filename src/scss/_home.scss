@@ -1,12 +1,15 @@
 #home{
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: rgb(177, 177, 177);
   border: 30px solid white;
 
   .home-logo{
     background-color: $logo;
-    height: 37vh;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home-about{
     @extend .home-logo;
@@ -21,17 +24,35 @@
     background-color: $projects;
   }
   .home-contact{
-    @extend .home-logo;
-    background-color: steelBlue;
+    @extend .home-projects;
   }
   .home-statement{
     @extend .home-intro;
   }
   .home-design{
-    @extend .home-logo;
-    background-color: darkGray;
+    @extend .home-about;
   }
   .home-social{
     @extend .home-logo;
+    justify-content: space-around;
+
+  }
+  .social-icons{
+    @extend .home-logo;
+    font-size: 40px;
+    color: black;
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    box-shadow: $boxShadow;
+  }
+  .social-icons a{
+    transition: all .8s ease-in-out;
+    color: lightGray;
+    text-shadow: none;
+    &:hover{
+      transform: scale(1.4);
+      color: darken(rgb(177, 177, 177), 3%);
+    }
   }
 }

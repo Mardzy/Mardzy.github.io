@@ -8,7 +8,6 @@ import MainNav from './components/common/MainNav';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'fontawesome';
-import 'jquery';
 import './scss/style.scss';
 
 class App extends React.Component {

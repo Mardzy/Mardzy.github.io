@@ -4,8 +4,38 @@
 @import "slick";
 @import "macbook";
 
+@font-face {
+  font-family: 'coolvetica';
+  src: url('/src/fonts/coolvetica_rg-webfont.woff') format('woff'),
+  url('/src/fonts/coolvetica_rg-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'capture_it';
+  src: url('/src/fonts/capture_it-webfont.woff') format('woff'),
+  url('/src/fonts/capture_it-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
+  font-family: 'coolvetica';
+  // text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-shadow: 0px 0px 7px rgba(171,154,171,0.56);
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  border: 8px solid white;
+  box-shadow: 0px 0px 7px 1px rgba(171,154,171,0.56);
 }
