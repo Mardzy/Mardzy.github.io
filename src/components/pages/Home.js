@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Row, Col } from 'reactstrap';
@@ -9,21 +9,21 @@ class Home extends React.Component {
     return (
       <div id="home">
         <Row className="no-gutters">
-          <Col sm={6} className="home-logo">
+          <Col md={6} sm={12}  className="home-logo">
             <img src="src/images/icons/pm.png" className="rounded-circle logo" />
           </Col>
-          <Col sm={6} className="home-about"></Col>
-          <Col sm={6} className="home-intro">
-            <p>Welcome <br/> I'm Paul Mardling<br/>This is my portfolio</p>
+          <Col md={6} sm={12}  className="home-about"></Col>
+          <Col md={6} sm={12}  className="home-intro">
+            <p>Welcome <br/> I`m Paul Mardling<br/>This is my portfolio</p>
           </Col>
-          <Col sm={6} className="home-projects"></Col>
-          <Col sm={6} className="home-contact"></Col>
+          <Col md={6} sm={12}  className="home-projects"></Col>
+          <Col md={6} sm={12}  className="home-contact"></Col>
 
-          <Col sm={6} className="home-statement">
-            <p>Welcome <br/> I'm Paul Mardling<br/>This is my portfolio</p>
+          <Col md={6} sm={12}  className="home-statement">
+            <p>Welcome <br/> I``m Paul Mardling<br/>This is my portfolio</p>
           </Col>
-          <Col sm={6} className="home-design"></Col>
-          <Col sm={6} className="home-social">
+          <Col md={6} sm={12}  className="home-design"></Col>
+          <Col md={6} sm={12}  className="home-social">
             <div className="social-icons rounded-circle">
               <Link to="https://github.com/Mardzy"><i className="fa fa-github-square" aria-hidden="true"></i></Link>
             </div>
