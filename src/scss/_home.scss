@@ -5,7 +5,7 @@
   border: 30px solid white;
 
   .home-logo{
-    background-color: $logo;
+    background-color: $whiteSmoke;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -31,6 +31,8 @@
   }
   .home-design{
     @extend .home-about;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .home-social{
     @extend .home-logo;
@@ -48,11 +50,103 @@
   }
   .social-icons a{
     transition: all .8s ease-in-out;
-    color: lightGray;
+    color: $projects;
     text-shadow: none;
     &:hover{
       transform: scale(1.4);
-      color: darken(rgb(177, 177, 177), 3%);
+      color: $about;
     }
   }
+
+  .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $projects;
+  }
+  h1{
+    font-size: 65px;
+    letter-spacing: 5px;
+    font-weight: 200;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    &:hover{
+
+    }
+  }
+
+  $size: 30px;
+
+  .pattern {
+    background: $whiteSmoke;
+    display: inline-block;
+    margin: 0.4em 0.5em 0 0;
+  }
+
+  .top,
+  .bottom {
+    height: $size;
+    width: $size * 2;
+  }
+
+  .right,
+  .left {
+    height: $size * 2;
+    width: $size;
+  }
+
+  .top {
+    border-top-left-radius: $size * 2;
+    border-top-right-radius: $size * 2;
+  }
+
+  .right {
+    border-bottom-right-radius: $size * 2;
+    border-top-right-radius: $size * 2;
+  }
+
+  .bottom {
+    border-bottom-left-radius: $size * 2;
+    border-bottom-right-radius: $size * 2;
+  }
+
+  .left {
+    border-bottom-left-radius: $size * 2;
+    border-top-left-radius: $size * 2;
+  }
+
+  .rotate {
+    animation: 50s linear infinite rotate;
+    position: relative;
+    top: $size * -1;
+    transform-origin: 50% 100%;
+  }
+  // .reverse-rotate {
+  //   animation: 50s linear infinite rotate;
+  //   // position: relative;
+  //   top: $size * -1;
+  //   transform-origin: 50% 100%;
+  // }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+  // @keyframes reverse-rotate {
+  //   from {
+  //     transform: rotate(360deg)
+  //   }
+  //   to {
+  //     transform: rotate(0deg)
+  //   }
+  // }
+
 }
