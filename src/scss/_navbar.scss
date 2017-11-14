@@ -1,4 +1,110 @@
-#nav-icon3 {
+.menu-wrapper {
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: 2004;
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-menu {
+  // background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 1;
+  display: block;
+  // overflow: hidden;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 80px 0 80px;
+  border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
+}
+
+#main-menu:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -5px
+}
+
+#main-menu ul {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%
+}
+
+#main-menu ul {
+  // padding: 35px 0;
+  display: block;
+  font-size: 2.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 1.5s ease
+  height 100vh;
+  list-style: none;
+
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  li {
+    margin-bottom: 20px;
+    transition: all .4s ease-in-out;
+    &:hover{
+      transform: scale(1.15);
+    }
+    a {
+      text-decoration: none;
+      color: $whiteSmoke;
+      font-size: 60px;
+    }
+  }
+
+}
+
+#main-menu ul .about-link a {
+  transition-delay: .2s
+}
+
+#main-menu ul .project-link a {
+  transition-delay: .4s
+}
+
+#main-menu ul .contact-link a {
+  transition-delay: .6s
+}
+
+.opened {
+  opacity: 0.9
+}
+
+.opened ul a {
+  opacity: 0.9
+  height 100vh;
+}
+
+.menu-toggle {
+  background-position: -102px -281px;
+  display: block;
+  height: 31px;
+  left: calc(50% - 31px);
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  width: 64px;
+  z-index: 2002
+}
+
+.menu-toggle {
+  background-position: -228px -10px
+}
+
+#nav-icon {
   width: 30px;
   height: 25px;
   position: relative;
@@ -18,7 +124,7 @@
   }
 }
 
-#nav-icon3 span,  {
+#nav-icon span,  {
   position: absolute;
   height: 4px;
   width: 100%;
@@ -37,7 +143,7 @@
 
 }
 
-#nav-icon3 span:nth-child(1) {
+#nav-icon span:nth-child(1) {
   top: 0px;
   &:hover{
     background-color: lighten(rgb(211, 211, 211), 10%);
@@ -45,168 +151,81 @@
   }
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
   top: 10px;
 }
 
-#nav-icon3 span:nth-child(4) {
+#nav-icon span:nth-child(4) {
   top: 20px;
 }
 
-#nav-icon3.open span:nth-child(1) {
+#nav-icon.open span:nth-child(1) {
   top: 10px;
   width: 0%;
   left: 50%;
 }
 
-#nav-icon3.open span:nth-child(2) {
+#nav-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon3.open span:nth-child(3) {
+#nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon3.open span:nth-child(4) {
+#nav-icon.open span:nth-child(4) {
   top: 10px;
   width: 0%;
   left: 50%;
 }
-// .kellum {
-//   text-indent: 100%;
-//   white-space: nowrap;
-//   overflow: hidden
+
+
+// .ripple {
+//   background: none repeat scroll 0 0 #e61c3f;
+//   border-radius: 100%;
+//   display: block;
+//   height: 50px;
+//   left: calc(50% - 25px);
+//   position: absolute;
+//   top: -25px;
+//   -ms-transform: scale(0);
+//   -webkit-transform: scale(0);
+//   transform: scale(0);
+//   width: 50px;
+//   z-index: 2000
 // }
-
-
-.menuwrapper {
-  top: px;
-  width: 100%;
-  position: fixed;
-  z-index: 2004;
-  display: flex;
-  justify-content: space-around;
-}
-
-#mainmenu {
-  // background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
-  position: absolute;
-  z-index: 2001;
-  display: block;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 80px 80px 0 80px;
-  border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
-}
-
-#mainmenu:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -5px
-}
-
-#mainmenu ul {
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%
-}
-
-#mainmenu ul a {
-  padding: 35px 0;
-  display: block;
-  color: #413231;
-  font-size: 2.25rem;
-  text-align: center;
-  font-family: Orator Std, Arial, sans-serif;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 1.5s ease
-}
-
-#mainmenu ul .item-102 a {
-  transition-delay: .2s
-}
-
-#mainmenu ul .item-103 a {
-  transition-delay: .4s
-}
-
-#mainmenu ul .item-104 a {
-  transition-delay: .6s
-}
-
-#mainmenu.opened ul a {
-  opacity: 1
-}
-
-.menutoggle {
-  background-position: -102px -281px;
-  display: block;
-  height: 31px;
-  left: calc(50% - 31px);
-  margin: 0 auto;
-  position: absolute;
-  top: 30px;
-  width: 64px;
-  z-index: 2002
-}
-
-.menutoggle.open {
-  background-position: -228px -10px
-}
-
-.ripple {
-  background: none repeat scroll 0 0 #e61c3f;
-  border-radius: 100%;
-  display: block;
-  height: 50px;
-  left: calc(50% - 25px);
-  position: absolute;
-  top: -25px;
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  width: 50px;
-  z-index: 2000
-}
-
-.ripple.animate {
-  -webkit-animation: ripple .65s linear;
-  animation: ripple .65s linear
-}
-
-@-webkit-keyframes ripple {
-  50% {
-    opacity: 1;
-    -webkit-transform: scale(50)
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(50)
-  }
-}
-
-@keyframes ripple {
-  50% {
-    opacity: 1;
-    -ms-transform: scale(50);
-    transform: scale(50)
-  }
-  100% {
-    opacity: 0;
-    -ms-transform: scale(50);
-    transform: scale(50)
-  }
-}
+//
+// .ripple.animate {
+//   -webkit-animation: ripple .65s linear;
+//   animation: ripple .65s linear
+// }
+//
+// @-webkit-keyframes ripple {
+//   50% {
+//     opacity: 1;
+//     -webkit-transform: scale(50)
+//   }
+//   100% {
+//     opacity: 0;
+//     -webkit-transform: scale(50)
+//   }
+// }
+//
+// @keyframes ripple {
+//   50% {
+//     opacity: 1;
+//     -ms-transform: scale(50);
+//     transform: scale(50)
+//   }
+//   100% {
+//     opacity: 0;
+//     -ms-transform: scale(50);
+//     transform: scale(50)
+//   }
+// }

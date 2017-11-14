@@ -6,16 +6,18 @@ import Routes from './components/utility/Routes';
 import MainNav from './components/common/MainNav';
 
 
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import 'fontawesome';
 import './scss/style.scss';
 
 class App extends React.Component {
   componentDidMount(){
-    const navIcon = document.getElementById('nav-icon3');
+    const mainmenu = document.getElementById('main-menu');
+    const navIcon = document.getElementById('nav-icon');
     const toggleIcon = () =>{
-      navIcon.addEventListener('click', ()=>{
+      navIcon.addEventListener('click', ()=> {
         navIcon.classList.toggle('open');
+        mainmenu.classList.toggle('opened');
       });
     };
     toggleIcon();

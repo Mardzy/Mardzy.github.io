@@ -1,21 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const MainNav = () => {
 
   return (
-    <section className="menuwrapper">
-      <nav id="mainmenu">
+    <section className="menu-wrapper">
+      <nav id="main-menu">
         <ul className="nav menu">
-          <li className="item-101 default"><a href="/">Home</a></li>
-          <li className="item-102 current active"><a href="/about-irene-demetri.html">About</a></li>
-          <li className="item-103"><a href="/what-i-do-web-design-branding.html">What I do</a></li>
-          <li className="item-104"><a href="/contact.html">Contact</a></li>
+          <li className="item-101 default"><Link to="/">Home</Link></li>
+          <li className="about-link current active"><Link to="/about">About</Link></li>
+          <li className="projects-link"><Link to="/projects">Projects</Link></li>
+          <li className="contact-link"><Link to="/contact">Contact</Link></li>
         </ul>
-
       </nav>
-      <a href="#" className="sprite menutoggle kellum">
-        <div id="nav-icon3">
+      <a href="#" className="menu-toggle">
+        <div id="nav-icon">
           <span></span>
           <span></span>
           <span></span>
