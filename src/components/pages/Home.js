@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 
 class Home extends React.Component {
@@ -24,7 +24,8 @@ class Home extends React.Component {
             </Link>
           </Col>
           <Col md={6} xs={12} className="home-intro">
-            <p>Welcome <br/> I'm Paul Mardling<br/>This is my portfolio</p>
+            <p>Welcome to my portfolio<br/>
+            I'm Paul Mardling<br/></p>
           </Col>
           <Col md={6} xs={12} className="home-projects">
             <Link to="projects">
@@ -64,79 +65,68 @@ class Home extends React.Component {
                   </g>
                 </svg>
 
-                {/* <img src="http://d.pr/f/rr2qex+"  />
+              </div>
+              <h2>Contact</h2>
+            </Link>
+          </Col>
 
-                <svg
-                className="back-to-school__paper"
-                width="86"
-                height="77"
-                viewBox="0 0 86 77" xmlns="http://www.w3.org/2000/svg">
-                <title>Group</title>
-                <g fill="none"><path fill="#FFF" d="M25 3l-8 6L4 26 0 43l7 21 14 6 17 7 19-4 8-6 2-12 18-12-17-22-7-17-17-4"/><path fill="#E1DFDD" d="M29 49l17 5v6l9-12 11-6-2-7-2-14-6 11-2-21 3-5-10 3 1 18-3 16"/><path fill="#E1DFDD" d="M42 75l10-10 6-3V52l11-4 6-9-4-13 10 7 5 10-15 11-2 12-9 9M19 42l-1-8 11-8 5-10v11l-8 5m-8 30l-7-12 8 4M30 9l-12 5 8 4"/><path fill="#CCCAC8" d="M47 47l4-18-6 8m29 10l-13 2-6 8m-22-5l-13 2-6 8"/>
-              </g>
-            </svg> */}
-
-          </div>
-
-
-          <h2>Contact</h2>
-        </Link>
-      </Col>
-
-      <Col md={6} xs={12} className="home-statement">
-        <p>Welcome <br/> I'm Paul Mardling<br/>This is my portfolio</p>
-      </Col>
-      <Col md={6} xs={12}  className="home-design">
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-        <div className="pattern bottom reverse"></div>
-        <div className="pattern left"></div>
-        <div className="pattern top rotate"></div>
-        <div className="pattern right"></div>
-      </Col>
-      <Col md={6} xs={12}  className="home-social">
-        <div className="social-icons rounded-circle">
-          <Link className="github" to="https://github.com/Mardzy"><i className="fa fa-github-square" aria-hidden="true"></i></Link>
-        </div>
-        <div className="social-icons rounded-circle">
-          <Link className="linkedin" to="https://www.linkedin.com/in/paul-g-mardling/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
-        </div>
-        <div className="social-icons rounded-circle">
-          <Link className="instagram" to="https://www.instagram.com/mmmmmardzy/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
-        </div>
-        <div className="social-icons rounded-circle">
-          <Link className="twitter" to="https://twitter.com/_Mardzy"><i className="fa fa-twitter-square" aria-hidden="true"></i></Link>
-        </div>
-
-      </Col>
-    </Row>
-  </div>
-);
-}
+          <Col md={6} xs={12} className="home-statement">
+            <p>Full stack developer<br/>
+            London, UK
+            </p>
+          </Col>
+          <Col md={6} xs={12}  className="home-design">
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
+            <div className="pattern top rotate"></div>
+            <div className="pattern right"></div>
+          </Col>
+          <Col md={6} xs={12}  className="home-social">
+            <Container>
+              <div className="social-icons rounded-circle">
+                <Link className="github" to="https://github.com/Mardzy"><i className="fa fa-github-square" aria-hidden="true"></i></Link>
+              </div>
+              <div className="social-icons rounded-circle">
+                <Link className="linkedin" to="https://www.linkedin.com/in/paul-g-mardling/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
+              </div>
+              <div className="social-icons rounded-circle">
+                <Link className="instagram" to="https://www.instagram.com/mmmmmardzy/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+              </div>
+              <div className="social-icons rounded-circle">
+                <Link className="twitter" to="https://twitter.com/_Mardzy"><i className="fa fa-twitter-square" aria-hidden="true"></i></Link>
+              </div>
+            </Container>
+          </Col>
+        </Row>
+      </div>
+    );
+  }
 }
 
 export default Home;

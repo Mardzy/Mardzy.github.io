@@ -1,6 +1,7 @@
 @import "variables";
 @import "navbar";
 @import "home";
+@import "about";
 @import "slick";
 @import "macbook";
 
@@ -10,17 +11,9 @@
   url('/src/fonts/coolvetica_rg-webfont.woff2') format('woff2');
   font-style: normal;
 }
-@font-face {
-  font-family: 'capture_it';
-  src: url('/src/fonts/capture_it-webfont.woff') format('woff'),
-  url('/src/fonts/capture_it-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body{
   font-family: 'coolvetica';
-  // text-transform: uppercase;
   color: white;
   font-size: 30px;
   line-height: 1.4;
