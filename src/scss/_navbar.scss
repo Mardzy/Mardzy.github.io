@@ -1,10 +1,5 @@
-// .sprite {
-//
-//   background-size: 355px 320px
-// }
-
 #nav-icon3 {
-  width: 40px;
+  width: 30px;
   height: 25px;
   position: relative;
   margin: 5px auto;
@@ -86,8 +81,9 @@
 
 
 .menuwrapper {
-  position: fixed;
+  top: px;
   width: 100%;
+  position: fixed;
   z-index: 2004;
   display: flex;
   justify-content: space-around;
@@ -97,16 +93,12 @@
   // background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
   position: absolute;
   z-index: 2001;
-  // width: 35.714vw;
-  // height: 100px;
-
-
   display: block;
   overflow: hidden;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 100px 100px 0 100px;
+  border-width: 80px 80px 0 80px;
   border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
 }
 
