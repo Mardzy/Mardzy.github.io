@@ -6,7 +6,7 @@ import Routes from './components/utility/Routes';
 import MainNav from './components/common/MainNav';
 
 
-// import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import 'fontawesome';
 import './scss/style.scss';
 
