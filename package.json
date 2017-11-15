@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
-    "start:client": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta",

@@ -1,6 +1,7 @@
 const React = require('react');
 // React from 'react';
-import ReactDOM from 'react-dom';
+const ReactDOM = require('react-dom');
+// import ReactDOM from 'react-dom';
 import { BrowserRouter as Router} from 'react-router-dom';
 
 import Routes from './components/utility/Routes';
@@ -8,11 +9,13 @@ import MainNav from './components/common/MainNav';
 
 
 import 'bootstrap/dist/css/bootstrap.css';
-import 'fontawesome';
 import './scss/style.scss';
 
 class App extends React.Component {
+
+
   componentDidMount(){
+    console.log('hello did mount');
     const mainmenu = document.getElementById('main-menu');
     const navIcon = document.getElementById('nav-icon');
     const toggleIcon = () =>{
@@ -24,7 +27,7 @@ class App extends React.Component {
     toggleIcon();
   }
   render(){
-    console.log('hello');
+    console.log('hello render');
     return (
       <Router>
         <main>
