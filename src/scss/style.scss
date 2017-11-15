@@ -16,15 +16,18 @@ body{
   line-height: 1.4;
   letter-spacing: 2px;
   text-shadow: $textShadow;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+
 }
 
 main{
+  border: 30px solid white;
   height: auto;
   width: 100vw;
-  border: 30px solid white;
+  overflow: hidden;
 }
 
 

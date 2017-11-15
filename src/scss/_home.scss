@@ -1,6 +1,6 @@
 #home{
-  width: 100vw;
-
+  width: 100%;
+overflow: hidden;
   .home-logo{
     background-color: $whiteSmoke;
     height: 250px;
@@ -269,7 +269,7 @@
     transition: all .6s ease-in-out;
     color: $whiteSmoke;
     font-weight: 900;
-    
+
     &:hover{
       transform: scale(1.13);
       // text-shadow: $textShadowHover;
