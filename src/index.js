@@ -2,14 +2,17 @@ const React = require('react');
 // React from 'react';
 const ReactDOM = require('react-dom');
 // import ReactDOM from 'react-dom';
-import { BrowserRouter as Router} from 'react-router-dom';
+// import { BrowserRouter as Router} from 'react-router-dom';
+const BrowserRouter = require('react-router-dom');
+// import Routes from './components/utility/Routes';
+const Routes = require('./components/utility/Routes');
+// import MainNav from './components/common/MainNav';
+const MainNav = require('./components/common/MainNav');
 
-import Routes from './components/utility/Routes';
-import MainNav from './components/common/MainNav';
-
-
-import 'bootstrap/dist/css/bootstrap.css';
-import './scss/style.scss';
+// import 'bootstrap/dist/css/bootstrap.css';
+require('bootstrap/dist/css/bootstrap.css');
+require('./scss/style.scss');
+// import './scss/style.scss';
 
 class App extends React.Component {
 
@@ -29,12 +32,12 @@ class App extends React.Component {
   render(){
     console.log('hello render');
     return (
-      <Router>
+      <BrowserRouter>
         <main>
           <MainNav />
           <Routes />
         </main>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
