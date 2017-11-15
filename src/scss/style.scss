@@ -5,15 +5,12 @@
 @import "slick";
 @import "macbook";
 
-@font-face {
-  font-family: 'coolvetica';
-  src: url('/src/fonts/coolvetica_rg-webfont.woff') format('woff'),
-  url('/src/fonts/coolvetica_rg-webfont.woff2') format('woff2');
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
 
 body{
-  font-family: 'coolvetica';
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   color: white;
   font-size: 30px;
   line-height: 1.4;

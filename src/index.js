@@ -23,6 +23,7 @@ class App extends React.Component {
     toggleIcon();
   }
   render(){
+    console.log('hello');
     return (
       <Router>
         <main>
