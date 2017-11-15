@@ -13,8 +13,8 @@ const HotModuleReplcement = new webpack.HotModuleReplacementPlugin();
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve('public'),
-    filename: 'app.js'
+    path: path.resolve(__dirname, 'build'),
+    filename: 'index.bundle.js'
   },
   module: {
     loaders: [
