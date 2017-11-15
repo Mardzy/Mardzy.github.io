@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "babel": "babel --presets es2015 src/index.js -o build/index.bundle.js",
+    "babel": "babel --presets es2015 src/index.js -o index.bundle.js",
     "build": "webpack -p",
     "start": "webpack-dev-server"
   },

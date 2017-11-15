@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpack = new HtmlWebpackPlugin({
-  template: 'index.html',
+  template: './src/index.html',
   filename: 'index.html',
   inject: 'body'
 });
@@ -13,7 +13,7 @@ const HotModuleReplcement = new webpack.HotModuleReplacementPlugin();
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, '/'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'index.bundle.js'
   },
   module: {
