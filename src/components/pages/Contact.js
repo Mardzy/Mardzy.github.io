@@ -1,15 +1,15 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// import { Row, Col, Container } from 'reactstrap';
-
+import ProjectSlider from '../projects/ProjectSlider';
+import Macbook from '../projects/Macbook';
 
 class Contact extends React.Component {
   render(){
     return (
-      <div id="contact">
-        <h1>Contact</h1>
+      <div>
+        <Macbook />
+        <ProjectSlider />
       </div>
+
     );
   }
 }

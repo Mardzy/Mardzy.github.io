@@ -4,26 +4,6 @@ import { Link } from 'react-router-dom';
 
 const MainNav =({handleClick, condition})=>{
 
-
-  // componentDidMount(){
-  //   const navLinks = document.querySelectorAll('nav-links');
-  //   const mainMenu = document.getElementById('transition');
-  //   console.log(navLinks);
-  //   const navIcon = document.getElementById('nav-icon');
-  //   console.log(navIcon);
-  //   const toggleIcon = () =>{
-  //     navIcon.addEventListener('click', ()=> {
-  //       navIcon.classList.toggle('open');
-  //       mainMenu.classList.toggle('opened');
-  //     });
-  //   };
-  //   toggleIcon();
-  //   navLinks.addEventListener('click', ()=> toggleIcon);
-  // }
-  //
-  // render(){
-  //   console.log(this.state);
-
   return (
     <section className="menu-wrapper">
       <nav id="main-menu">

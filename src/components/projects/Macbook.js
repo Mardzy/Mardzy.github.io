@@ -1,4 +1,5 @@
 import React from 'react';
+// import ProjectSlider from './ProjectSlider';
 
 const Macbook = () => {
 
@@ -11,6 +12,7 @@ const Macbook = () => {
     <div className='pca-hold'>
       <div className='pca-main'>
         <div className='pca-inner'>
+          {/* <ProjectSlider /> */}
 
           <div><img src="https://placeimg.com/640/480/animals"/></div>
 

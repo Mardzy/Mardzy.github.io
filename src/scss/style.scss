@@ -3,6 +3,8 @@
 @import "home";
 @import "about";
 @import "slick";
+@import "projects";
+@import "contact";
 @import "macbook";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
@@ -30,6 +32,11 @@ main{
   overflow: hidden;
 }
 
+h1{
+  padding-top: 60px;
+  text-align: center;
+  font-weight: 900;
+}
 
 .logo{
   display: flex;
