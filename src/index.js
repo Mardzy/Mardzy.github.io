@@ -7,24 +7,33 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './scss/style.scss';
 
 class App extends React.Component {
-
-  componentDidMount(){
-    const mainMenu = document.getElementById('transition');
-    console.log(mainMenu);
-    const navIcon = document.getElementById('nav-icon');
-    const toggleIcon = () =>{
-      navIcon.addEventListener('click', ()=> {
-        navIcon.classList.toggle('open');
-        mainMenu.classList.toggle('opened');
-      });
+  constructor(props) {
+    super(props);
+    this.state = {
+      condition: false
     };
-    toggleIcon();
+    this.handleClick =  this.handleClick.bind(this);
   }
+  // state = {
+  //   condition: false
+  // };
+
+
+  handleClick() {
+    this.setState({
+      condition: !this.state.condition
+    });
+  }
+
   render(){
+    // console.log(this.state);
     return (
       <BrowserRouter>
         <main>
-          <MainNav />
+          {this.state && <MainNav
+            handleClick={this.handleClick}
+            condition= {this.state.condition}
+          />}
           <Routes />
         </main>
       </BrowserRouter>
