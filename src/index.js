@@ -8,7 +8,6 @@ import './scss/style.scss';
 
 class App extends React.Component {
 
-
   componentDidMount(){
     const mainMenu = document.getElementById('transition');
     console.log(mainMenu);
