@@ -2,4 +2,50 @@
   height: auto;
   background-color: $about;
   padding-bottom: 80px;
+  .project-row{
+    width: 95%;
+    margin: 0 auto;
+    p{
+      padding: 15px;
+    }
+
+    a{
+      color: $whiteSmoke;
+    }
+    h4{
+      padding-top: 20px;
+      transition: all .4s ease-in-out;
+      font-weight: 900;
+      font-size: 35px;
+      text-align: center;
+      &:hover{
+        transform: scale(1.15);
+      }
+    }
+    .tech-icons{
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      .icon{
+        img{
+          border-radius: 50%;
+          height: 75px;
+          width: 75px;
+          margin: 10px;
+          // border: 1px solid darkGray;
+          box-shadow: $boxShadow;
+        }
+      }
+    }
+
+    .carousel-caption{
+      h3{
+        display: none;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
 }
