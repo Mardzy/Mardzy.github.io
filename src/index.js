@@ -10,7 +10,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      condition: false
+      condition: false,
+      error: ''
     };
     this.handleClick =  this.handleClick.bind(this);
   }
@@ -19,9 +20,10 @@ class App extends React.Component {
   // };
 
 
-  handleClick() {
+  handleClick(err) {
     this.setState({
-      condition: !this.state.condition
+      condition: !this.state.condition,
+      error: console.log(err)
     });
   }
 

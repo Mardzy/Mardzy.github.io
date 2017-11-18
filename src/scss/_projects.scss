@@ -1,19 +1,35 @@
 #projects{
   height: auto;
-  background-color: $about;
+  background-color: $whiteSmoke;
   padding-bottom: 80px;
+  p{
+    width: 70%;
+    margin: 0 auto;
+    color: rgb(45, 45, 45);
+  }
   .project-row{
     width: 95%;
     margin: 0 auto;
+    .project-description{
+      display: flex;
+      flex-direction: column;
+    }
     p{
-      padding: 15px;
+      width: 95%;
+      padding: 0 15px;
+      margin-bottom: 0;
     }
 
     a{
       color: $whiteSmoke;
     }
+    .col-12{
+      display: flex;
+      justify-content: space-around;
+    }
     h4{
-      padding-top: 20px;
+      display: inline-block;
+      padding: 20px 0;
       transition: all .4s ease-in-out;
       font-weight: 900;
       font-size: 35px;
@@ -24,7 +40,8 @@
     }
     .tech-icons{
       display: flex;
-      justify-content: space-around;
+      // justify-content: space-around;
+      // flex-direction: column;
       padding: 20px;
       .icon{
         img{
