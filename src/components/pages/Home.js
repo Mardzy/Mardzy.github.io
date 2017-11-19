@@ -108,7 +108,7 @@ class Home extends React.Component {
             <div className="pattern right"></div>
           </Col>
           <Col md={6} xs={12}  className="home-social">
-            <Container>
+            <Container className="social-container">
               <div className="social-icons rounded-circle">
                 <Link className="github" to="https://github.com/Mardzy"><i className="fa fa-github-square" aria-hidden="true"></i></Link>
               </div>

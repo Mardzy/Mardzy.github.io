@@ -1,6 +1,6 @@
 #home{
   width: 100%;
-overflow: hidden;
+  overflow: hidden;
   .home-logo{
     background-color: $whiteSmoke;
     height: 250px;
@@ -248,7 +248,6 @@ overflow: hidden;
   .home-icon{
     width: 130px;
     height: 130px;
-    // border: 8px solid white;
     border-radius: 50%;
     background-color: $whiteSmoke;
     margin-bottom: 10px;
@@ -275,43 +274,48 @@ overflow: hidden;
       // text-shadow: $textShadowHover;
     }
   }
+  .social-container{
+    height: 200px;
+    display: flex;
+    align-items: center;
 
-
-  .social-icons{
-    @extend .home-logo;
-    font-size: 42px;
-    line-height: 30px;
-    color: black;
-    height: 75px;
-    width: 75px;
-    background-color: white;
-    box-shadow: $boxShadow;
-  }
-  .social-icons a{
-    transition: all .6s ease-in-out;
-    text-shadow: none;
-    &:hover{
-      transform: scale(1.13);
+    .social-icons{
+      @extend .home-logo;
+      font-size: 42px;
+      line-height: 30px;
+      color: black;
+      height: 75px;
+      width: 75px;
+      margin: 10px;
+      background-color: white;
+      box-shadow: $boxShadow;
     }
-  }
-  .social-icons a.github{
-    color: rgb(36, 41, 46);
-    &hover {
+    .social-icons a{
+      transition: all .6s ease-in-out;
+      text-shadow: none;
+      &:hover{
+        transform: scale(1.13);
+      }
     }
-  }
-  .social-icons a.instagram{
-    color: rgb(36, 41, 46);
-    &hover {
+    .social-icons a.github{
+      color: rgb(36, 41, 46);
+      &hover {
+      }
     }
-  }
-  .social-icons a.linkedin{
-    color: rgb(0, 120, 176);
-    &hover {
+    .social-icons a.instagram{
+      color: rgb(36, 41, 46);
+      &hover {
+      }
     }
-  }
-  .social-icons a.twitter{
-    color: rgb(0, 163, 236);
-    &hover {
+    .social-icons a.linkedin{
+      color: rgb(0, 120, 176);
+      &hover {
+      }
+    }
+    .social-icons a.twitter{
+      color: rgb(0, 163, 236);
+      &hover {
+      }
     }
   }
 

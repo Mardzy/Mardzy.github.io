@@ -8,9 +8,9 @@ const Projects = ()=> {
   return (
     <div id="projects">
       <h1>Projects</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
       {projectData.map((project, i) =>
-        <Row className="justify-content-center" key={i}><Project  {...project} /></Row>)}
+        <Row className="projects-row" key={i}><Project  {...project} /></Row>)}
 
     </div>
   );

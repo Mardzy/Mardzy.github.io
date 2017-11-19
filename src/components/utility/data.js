@@ -41,7 +41,8 @@ export default [{
   }, {
     icon: 'src/assets/images/icons/aws.png',
     name: 'Amazon Web Services'
-  }]
+  }],
+  description: 'I\'m a cat lover, so I thought it would be a lot of fun to create a social app for cat lovers.    The app features Facebook login, user to user messaging, and enables users to update profiles, add, edit, or delete your cat, and allows you to comment on a cat. I created a customized logo using a google font, Sass and HTML.'
 },{
   title: 'Tandem Bike App',
   link: 'http://tandem-bike-app.herokuapp.com/',
@@ -85,7 +86,8 @@ export default [{
   }, {
     icon: 'src/assets/images/icons/aws.png',
     name: 'Amazon Web Services'
-  }]
+  }],
+  description: 'Tandem was a group project where we decided to create a social app for cyclists. After registering for the app, you are able to update, or delete your profile, view all of the routes created by other users, create or edit a cycling route using information and maps from the Google API. A user can join another route, and members of the route are able to comment on the route. This was the first extended group project that I\'d worked on and it was a really great experience working with others to make decisions and solve issues.'
 },{
   title: 'Heaven Spot Heroes',
   link: 'https://heaven-spot-heroes.herokuapp.com/',
@@ -126,7 +128,8 @@ export default [{
   }, {
     icon: 'src/assets/images/icons/scss.png',
     name: 'Scss'
-  }]
+  }],
+  description: ''
 },{
   title: 'Dice Sums',
   link: 'https://dice-sums.herokuapp.com/',
@@ -149,7 +152,8 @@ export default [{
   }, {
     icon: 'src/assets/images/icons/scss.png',
     name: 'SCSS'
-  }]
+  }],
+  description: ''
 },{
   title: 'The Great RGB Guessing Game',
   link: 'https://rgb--game.herokuapp.com/',
@@ -169,5 +173,6 @@ export default [{
   }, {
     icon: 'src/assets/images/icons/css3.png',
     name: 'CSS3'
-  }]
+  }],
+  description: 'This game was the first that I\'d built using JavaScript. The game posts an RGB color value and gives the user five chances to guess the color by clicking on a unique color. I thought this was a really clever game in that it was helping me visualise the RGB colors as it was being built and played.'
 }];
