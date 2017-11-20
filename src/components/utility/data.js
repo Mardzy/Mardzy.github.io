@@ -129,7 +129,7 @@ export default [{
     icon: 'src/assets/images/icons/scss.png',
     name: 'Scss'
   }],
-  description: ''
+  description: 'Heaven Spot Heroes was the first RESTful app I created for presentation. I enjoy seeing street art, and taking photos of the pieces I really enjoy, so I decided to use my photos as the content for the app. I enjoyed the research and design phases nearly as much as I enjoyed putting the code together to get the functionality to where I anticipated it to be. The app features authentication, and allows users to add, and comment on photos. I chose the title during my research phase, and it is explained in the terms on the landing page.'
 },{
   title: 'Dice Sums',
   link: 'https://dice-sums.herokuapp.com/',
@@ -153,7 +153,7 @@ export default [{
     icon: 'src/assets/images/icons/scss.png',
     name: 'SCSS'
   }],
-  description: ''
+  description: 'Dice Sums was my first project created while at General Assembly. The player receives three attempts to increase the sum of their 5 dice. The player can end the round if they feel their sum is high enough to win the round. The computer opponent\'s dice are compared with the player\'s dice to determine the winner.'
 },{
   title: 'The Great RGB Guessing Game',
   link: 'https://rgb--game.herokuapp.com/',
@@ -174,5 +174,5 @@ export default [{
     icon: 'src/assets/images/icons/css3.png',
     name: 'CSS3'
   }],
-  description: 'This game was the first that I\'d built using JavaScript. The game posts an RGB color value and gives the user five chances to guess the color by clicking on a unique color. I thought this was a really clever game in that it was helping me visualise the RGB colors as it was being built and played.'
+  description: 'This game was the first I\'d built using JavaScript. The game posts an RGB color value and gives the user five chances to guess the color by clicking on a unique color. I thought this was a really clever game in that it was helping me visualise the RGB colors as it was being built and played.'
 }];

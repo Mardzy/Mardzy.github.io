@@ -7,16 +7,17 @@
 @import "projects";
 @import "contact";
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri|Lato:900|Ruda:700');
+
+//
+
+// font-family: 'Lato', sans-serif
 
 
 body{
-  font-family: 'Lato', sans-serif;
   font-weight: 900;
   color: white;
-  font-size: 30px;
   line-height: 1.4;
-  letter-spacing: 2px;
   text-shadow: $textShadow;
   max-width: 100%;
   overflow-x: hidden;
@@ -36,7 +37,17 @@ main{
 
   h1{
     text-align: center;
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
+  }
+  h2, h4 {
+    font-family: 'Ruda', sans-serif;
+  }
+
+  p{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(45, 45, 45);
+
   }
   a{
     &:hover{

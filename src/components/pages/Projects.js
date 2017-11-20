@@ -7,8 +7,8 @@ import Project from '../projects/Project';
 const Projects = ()=> {
   return (
     <div id="projects">
-      <h1>Projects</h1>
-      
+      <h2>Projects</h2>
+
       {projectData.map((project, i) =>
         <Row className="projects-row" key={i}><Project  {...project} /></Row>)}
 

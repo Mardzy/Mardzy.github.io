@@ -9,7 +9,7 @@ class About extends React.Component {
     return (
       <div id="about">
         <header>
-          <h1>About Me</h1>
+          <h2>About Me</h2>
         </header>
         <Container>
           <Row>

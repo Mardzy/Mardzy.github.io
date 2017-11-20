@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Row, Col, Container } from 'reactstrap';
+import Macbook from '../projects/Macbook';
 
 
 class Home extends React.Component {
@@ -29,21 +30,7 @@ class Home extends React.Component {
           </Col>
           <Col md={6} xs={12} className="home-projects">
             <Link to="projects">
-              <div className="home-icon">
-                <div className='pca-hold'>
-                  <div className='pca-main'>
-                    <div className='pca-inner'>
-                    </div>{/* <!-- 'pca-inner' --> */}
-                  </div>{/* <!-- 'pca-main' -->*/}
-                  <div className='pca-sub'>
-                    <div className='pca-top'></div>
-                    <div className='pca-mid'>
-                      <div className='pca-part'></div>
-                    </div>{/* <!-- 'pca-mid' --> */}
-                    <div className='pca-bot'></div>
-                  </div>{/* <!-- 'pca-bot' -->*/}
-                </div>{/* <!-- 'pca-hold' -->*/}
-              </div>
+              <Macbook></Macbook>
 
               <h2>Projects</h2>
             </Link>
