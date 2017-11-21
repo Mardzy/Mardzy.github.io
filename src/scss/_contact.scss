@@ -1,0 +1,50 @@
+#contact{
+  height: 91vh;
+  width: 100%;
+  .contact-heading{
+    height: 22.75vh;
+    background: $whiteSmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+      padding: 20px 0 0;
+      text-align: center;
+    }
+    a, i{
+      font-size: 20px;
+      color: $whiteSmoke;
+      font-weight: 400;
+      transition: all .6s ease-in-out;
+      &:hover{
+        transform: scale(1.05);
+        // text-shadow: $textShadowHover;
+      }
+    }
+    i{
+      font-size: 60px;
+    }
+  }
+  .contact-mobile{
+    @extend .contact-heading;
+    background-color: $intro;
+    i{
+      font-size: 120px;
+    }
+    a{
+      margin-top: -10px;
+    }
+  }
+  .contact-email{
+    @extend .contact-heading;
+    background-color: $projects;
+  }
+  .contact-twitter{
+    @extend .contact-mobile;
+    background-color: $about;
+    i{
+      font-size: 80px;
+    }
+  }
+}
