@@ -129,7 +129,7 @@ export default [{
     icon: 'src/assets/images/icons/scss.png',
     name: 'Scss'
   }],
-  description: 'Heaven Spot Heroes was the first RESTful app I created for presentation. I enjoy seeing street art, and taking photos of the pieces I really enjoy, so I decided to use my photos as the content for the app. I enjoyed the research and design phases nearly as much as I enjoyed putting the code together to get the functionality to where I anticipated it to be. The app features authentication, and allows users to add, and comment on photos. I chose the title during my research phase, and it is explained in the terms on the landing page.'
+  description: 'Heaven Spot Heroes was the first RESTful app I created for presentation. I enjoy seeing street art, and taking photos of the pieces I really like, so I decided to use my photos as the content for the app. I enjoyed the research and design phases nearly as much as I enjoyed building out the app. The app features authentication, and allows users to add, and comment on photos. I chose the title during my research phase, and it is explained in the terms on the landing page.'
 },{
   title: 'Dice Sums',
   link: 'https://dice-sums.herokuapp.com/',
