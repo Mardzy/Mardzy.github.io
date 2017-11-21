@@ -21,7 +21,7 @@ class Home extends React.Component {
               <div className="home-icon">
                 <span className="maple"></span>
               </div>
-              <h2>About Me</h2>
+              <h3>About Me</h3>
             </Link>
           </Col>
           <Col md={6} xs={12} className="home-intro">
@@ -32,7 +32,7 @@ class Home extends React.Component {
             <Link to="projects">
               <Macbook></Macbook>
 
-              <h2>Projects</h2>
+              <h3>Projects</h3>
             </Link>
           </Col>
           <Col md={6} xs={12} className="home-contact">
@@ -53,7 +53,7 @@ class Home extends React.Component {
                 </svg>
 
               </div>
-              <h2>Contact</h2>
+              <h3>Contact</h3>
             </Link>
           </Col>
 
@@ -93,6 +93,8 @@ class Home extends React.Component {
             <div className="pattern left"></div>
             <div className="pattern top rotate"></div>
             <div className="pattern right"></div>
+            <div className="pattern bottom reverse"></div>
+            <div className="pattern left"></div>
           </Col>
           <Col md={6} xs={12}  className="home-social">
             <Container className="social-container">

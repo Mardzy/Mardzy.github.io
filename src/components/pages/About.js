@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
-import { Row, Col, Container } from 'reactstrap';
+import { Row } from 'reactstrap';
 
 
 class About extends React.Component {
@@ -11,20 +11,25 @@ class About extends React.Component {
         <header>
           <h2>About Me</h2>
         </header>
-        <Container>
-          <Row>
-            <Col sm={5}>
-              <img src="https://placeimg.com/400/400/people" alt="photo ofPaul Mardling"/>
-            </Col>
-            <Col sm={7}><p>I don't like it here Morty. I can't abide bureaucracy. I don't like being told where to go and what to do. I consider it a violation. Did you get those seeds all the way up your butt? You have to turn them on Morty! The shoes need to be turned on! Oh, we're welllll past that, Jerry! Listen, Morty, I hate to break it to you but what people call "love" is just a chemical reaction that compels animals to breed. It hits hard, Morty, then it slowly fades, leaving you stranded in a failing marriage. I did it. Your parents are gonna do it. Break the cycle, Morty. Rise above. Focus on science.
-              <br/>
-              It's not like we can do this every week, we get 3 or 4 more of these tops. Rubber baby buggy bumpers! You’re like Hitler, but even Hitler cared about Germany or something.</p></Col>
-            </Row>
-          </Container>
 
-        </div>
-      );
-    }
+        <Row>
+          <div className="about-image">
+            <img src="../../src/assets/images/icons/paul.jpg" alt="photo of Paul Mardling"/>
+          </div>
+          <div className="about-content">
+            <p>From an early age I enjoyed problem solving, especially when it was paired with building things.<br/>
+            This lead me to a career as a Manufacturing Engineer, where I worked with CNC machines to create products for automotive, oil and gas, pneumatic, medical, transportation and aerospace industries.<br/>
+            When I started playing around with coding tutorials, I realised that coding used very similar programmatic problem solving techniques, which was what I enjoyed most about my engineering role.<br/>
+            The more code I wrote, and the more I built, the more time I wanted to spend learning to design and code. Through these projects I realised how satisfying it can be to have something look sharp, and function the way I expect it should.<br/>
+            </p>
+            <p>I grew up in Canada, and now live with my wife, and our two cats in London, UK.</p>
+          </div>
+        </Row>
+
+
+      </div>
+    );
   }
+}
 
-  export default About;
+export default About;
