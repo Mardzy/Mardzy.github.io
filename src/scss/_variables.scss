@@ -8,3 +8,5 @@ $textShadow: 1px 1px 4px rgba(112, 112, 112, 1);
 $base: 40px;
 $offset: 5px;
 $to: $base + $offset;
+
+$tablet: "(min-width: 768px) and (max-width: 1023px)";

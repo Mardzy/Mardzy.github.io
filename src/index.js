@@ -20,10 +20,10 @@ class App extends React.Component {
   // };
 
 
-  handleClick(err) {
+  handleClick() {
     this.setState({
-      condition: !this.state.condition,
-      error: console.log(err)
+      condition: !this.state.condition
+      // error: console.log(err)
     });
   }
 
