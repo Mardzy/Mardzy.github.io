@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Col, Row, UncontrolledCarousel } from 'reactstrap';
 // import Macbook from '.Macbook'
 
@@ -11,10 +11,10 @@ const Project = ({title, link, gallery, tech, description}) => {
     <div className="project-wrapper">
       <Row className="project-row no-gutters">
         <Col className="col-12">
-          <Link
-            to={link}>
+          <a
+            href={link}>
             <h4>{title}</h4>
-          </Link>
+          </a>
         </Col>
         <Col xl={6} lg={12} md={12} sm={12} xs={12} className="align-items-center macbook">
 

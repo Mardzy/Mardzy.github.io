@@ -99,16 +99,16 @@ class Home extends React.Component {
           <Col md={6} xs={12}  className="home-social">
             <Container className="social-container">
               <div className="social-icons rounded-circle">
-                <Link className="github" to="https://github.com/Mardzy"><i className="fa fa-github-square" aria-hidden="true"></i></Link>
+                <a className="github" href="https://github.com/Mardzy"><i className="fa fa-github-square" aria-hidden="true"></i></a>
               </div>
               <div className="social-icons rounded-circle">
-                <Link className="linkedin" to="https://www.linkedin.com/in/paul-g-mardling/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
+                <a className="linkedin" href="https://www.linkedin.com/in/paul-g-mardling/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
               </div>
               <div className="social-icons rounded-circle">
-                <Link className="instagram" to="https://www.instagram.com/mmmmmardzy/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+                <a className="instagram" href="https://www.instagram.com/mmmmmardzy/"><i className="fa fa-instagram" aria-hidden="true"></i></a>
               </div>
               <div className="social-icons rounded-circle">
-                <Link className="twitter" to="https://twitter.com/_Mardzy"><i className="fa fa-twitter-square" aria-hidden="true"></i></Link>
+                <a className="twitter" href="https://twitter.com/_Mardzy"><i className="fa fa-twitter-square" aria-hidden="true"></i></a>
               </div>
             </Container>
           </Col>
