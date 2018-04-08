@@ -22,7 +22,7 @@ class About extends React.Component {
             When I started playing around with coding tutorials, I realised that coding used very similar programmatic problem solving techniques, which was what I enjoyed most about my engineering role.<br/>
             The more code I wrote, and the more I built, the more time I wanted to spend learning to design and code. Through these projects I realised how satisfying it can be to have something look sharp, and function the way I expect it should.<br/>
             </p>
-            <p>I grew up in Canada, and now live with my wife, and our two cats in London, UK.</p>
+//             <p>I grew up in Canada, and now live with my wife, and our two cats in London, UK.</p>
           </div>
         </Row>
 
