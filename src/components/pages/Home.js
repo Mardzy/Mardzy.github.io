@@ -26,7 +26,7 @@ class Home extends React.Component {
           </Col>
           <Col md={6} xs={12} className="home-intro">
             <p>Welcome to my portfolio<br/>
-            I'm Paul Mardling<br/></p>
+            I`'`m Paul Mardling<br/></p>
           </Col>
           <Col md={6} xs={12} className="home-projects">
             <Link to="projects">
